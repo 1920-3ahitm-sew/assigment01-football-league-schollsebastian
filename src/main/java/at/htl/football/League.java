@@ -11,23 +11,6 @@ public class League {
     }
 
     private Team findOrCreateTeam(String teamName) {
-//        int start = 0;
-//        int end = teams.size() - 1;
-//
-//        while (start <= end) {
-//            int mid = (start + end) / 2;
-//
-//            if (teams.get(mid).getName().equals(teamName)) {
-//                return teams.get(mid);
-//            } else {
-//                if (teams.get(mid).getName().compareTo(teamName) > 0) {
-//                    end = mid - 1;
-//                } else {
-//                    start = mid + 1;
-//                }
-//            }
-//        }
-
         for (Team team : teams) {
             if (team.getName().equals(teamName)) {
                 return team;
